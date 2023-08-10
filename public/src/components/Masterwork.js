@@ -9,7 +9,6 @@ import frameImg from "../img/Frame.png";
 import img from "../img/logo-masterji 1.png";
 
 import img1 from "../img/Frame (1).png"
-import img5 from "../img/Frame (2).png"
 import img2 from "../img/Group 205.png"
 import img3 from "../img/Group 207.png"
 import new1 from "../img/new.jpg"
@@ -20,45 +19,40 @@ export default function Masterwork() {
       <div className="MainMaster">
         <div className="textMaster">
           <div className="ellipseBox">
-            <img src={EllipseImg} alt="" className="elipi"></img>
+            <img src={EllipseImg} alt=""></img>
             <h1 className="text1">
-              How Masterji works _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              How Masterji works <span>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</span>
             </h1>
           </div>
-
 
           <div className="container-fluid my-5">
           <div className="row justify-content-evenly">
             <div className="col-md-2">
               <div  className=" justify-content-center"  style={{ width: "15rem" }} >
                 <img
-                  className=" justify-content-center"
-                  style={{ width: "81px", height: "81px" }}
-                  src={img1}
+                  className=" justify-content-center masterimg1"
+                  src={img2}
                   alt="Card image cap"
                 />
                 <div className="card-body">
                 <h4 style={{marginLeft:"-8rem",marginTop:"-2rem"}}>1</h4>
-                <p className="card-text my-2" style={{fontWeight:"bold",width:"10rem",textAlign:"left",marginLeft:"3rem"}} >
-                 
+                <p className="card-text my-2 masterText1" >
                   Select garments and book a tailor for it’s stitching.
                   </p>
-                 
                 </div>
               </div>
             </div>
             <div className="col-md-2">
               <div className="" style={{ width: "15rem" }}>
                 <img
-                  className="card-img-top"
-                  src={img2}
-                  style={{ width: "81px", height: "81px" }}
+                  className="card-img-top masterimg2"
+                  src={img1}
                   alt="Card image cap"
                 />
                 <div className="card-body">
                 <h4 style={{marginLeft:"-8rem",marginTop:"-2rem"}}>2</h4>
                 <p style={{color: "var(--gray-2, #4F4F4F)"}}>Arera colony, Bhopal</p>
-                <p className="card-text " style={{fontWeight:"450",width:"10rem",textAlign:"left",marginLeft:"3rem", marginTop:"-1rem"}}>
+                <p className="card-text masterText2">
                   <b>
                   A tailor will arrive at your doorstep</b>
                   </p>
@@ -70,15 +64,14 @@ export default function Masterwork() {
               <div className="" style={{ width: "15rem" }}>
                
                  <img
-                  className="card-img-top"
-                  style={{ width: "81px", height: "81px" }}
+                  className="card-img-top masterimg3"
                   src={new1}
                   alt="Card image cap"
                 />
                 
                 <div className="card-body">
                 <h4 style={{marginLeft:"-8rem",marginTop:"-2rem"}}>3</h4>
-                <p className="card-text my-2" style={{fontWeight:"450",width:"10rem",textAlign:"left",marginLeft:"3rem"}}>
+                <p className="card-text my-2 masterText3">
                   <b>
                   Our expert will take your measurements</b>
                   </p>
@@ -89,15 +82,14 @@ export default function Masterwork() {
             <div className="col-md-2">
               <div className="" style={{ width: "15rem" }}>
                 <img
-                  className="card-img-top"
-                  style={{ width: "81px", height: "81px" }}
+                  className="card-img-top masterimg4"
                   src={img3}
                   alt="Card image cap"
                 />
                 <div className="card-body">
                 <h4 style={{marginLeft:"-8rem",marginTop:"-2rem"}}>4</h4>
                 <p style={{color: "var(--gray-2, #4F4F4F)"}}>Arera colony, Bhopal</p>
-                  <p className="card-text  " style={{fontWeight:"450",width:"10rem",textAlign:"left",marginLeft:"3rem",marginTop:"-1rem"}} >
+                  <p className="card-text masterText4">
                   <b>
                   Stitched garment will be deilvered at your doorstep </b>
                   </p>
@@ -209,9 +201,9 @@ export default function Masterwork() {
 
       <div className="footer">
         <img src={img} alt="Logo" className="footerLogo"/>
-        <div>
+        <div className="address">
             <h3>Address</h3>
-            <p>2nd floor, Ayodhya Bypass Rd, Bhawanidham <br/> Phase-1, Chhatrapati Nagar, Narela Shankri,<br/>  Ayodhya Nagar, Bhopal, Madhya Pradesh <br/> 462041 9599569654, 9599569654</p>
+            <p className="footData">2nd floor, Ayodhya Bypass Rd, Bhawanidham <br/> Phase-1, Chhatrapati Nagar, Narela Shankri,<br/>  Ayodhya Nagar, Bhopal, Madhya Pradesh <br/> 462041 9599569654, 9599569654</p>
         </div>
         <img src={footerPay} alt="Payment Img" className="footerPay"></img>
         <p className="footerAdd">Fashion consultants Find <br/>Fabric shops Blogs <br/> Privacy Policy</p>
