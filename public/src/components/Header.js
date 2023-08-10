@@ -39,7 +39,7 @@ const Header = () => {
         <h1 className='headerText'>32 fabric shops <br />near you</h1>
       </div>
       <div className="text-center">
-        <img src={imgPay} className='imgPay img-fluid' alt='' /> {/* img-fluid makes the image responsive */}
+        <img src={imgPay} className='imgPay img-fluid' alt='' />
       </div>
     </>
   );
