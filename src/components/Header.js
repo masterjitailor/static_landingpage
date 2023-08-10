@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-warning  navContainer" style={{ background: '#FED549' }}>
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
+          <NavLink className="navbar-brand" to="/Landing">
             <img src={img} className="logoImg" alt="" />
           </NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
