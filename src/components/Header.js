@@ -4,13 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../style/header.css";
 import img from "../img/logo-masterji 1.png";
 import imgPay from "../img/Group 221.png";
+import playStore from "../img/playStore.png";
+import appStore from "../img/appStore.png";
 
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-warning  navContainer" style={{ background: '#FED549' }}>
         <div className="container">
-          <NavLink className="navbar-brand" to="/Landing">
+          <NavLink className="navbar-brand" to="/">
             <img src={img} className="logoImg" alt="" />
           </NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +40,9 @@ const Header = () => {
       <div className='headerMain text-center py-5'> {/* text-center to center-align content */}
         <h1 className='headerText'>32 fabric shops <br />near you</h1>
       </div>
-      <div className="text-center">
-        <img src={imgPay} className='imgPay img-fluid' alt='' />
+      <div className="text-center store">
+        <img src={playStore} className='imgPay img-fluid' alt='' />
+        <img src={appStore} className='imgPay1 img-fluid' alt='' />
       </div>
     </>
   );

@@ -7,11 +7,14 @@ import EllipseImg from "../img/Ellipse 7.png";
 import Ellipse20 from "../img/Ellipse 20.png";
 import frameImg from "../img/Frame.png";
 import img from "../img/logo-masterji 1.png";
-
 import img1 from "../img/Frame (1).png"
 import img2 from "../img/Group 205.png"
 import img3 from "../img/Group 207.png"
-import new1 from "../img/new.jpg"
+import new1 from "../img/new.jpg";
+import instagram from "../img/Instagram.png";
+import facebook from "../img/facebook.png";
+import playStore from "../img/playStore.png";
+import appStore from "../img/appStore.png";
 
 export default function Masterwork() {
   return (
@@ -28,7 +31,7 @@ export default function Masterwork() {
           <div className="container-fluid my-5">
           <div className="row justify-content-evenly">
             <div className="col-md-2">
-              <div  className=" justify-content-center"  style={{ width: "15rem" }} >
+              <div  className=" justify-content-center masterMain1">
                 <img
                   className=" justify-content-center masterimg1"
                   src={img2}
@@ -43,7 +46,7 @@ export default function Masterwork() {
               </div>
             </div>
             <div className="col-md-2">
-              <div className="" style={{ width: "15rem" }}>
+              <div className="masterMain2">
                 <img
                   className="card-img-top masterimg2"
                   src={img1}
@@ -61,7 +64,7 @@ export default function Masterwork() {
               </div>
             </div>
             <div className="col-md-2">
-              <div className="" style={{ width: "15rem" }}>
+              <div className="masterMain3">
                
                  <img
                   className="card-img-top masterimg3"
@@ -80,7 +83,7 @@ export default function Masterwork() {
               </div>
             </div>
             <div className="col-md-2">
-              <div className="" style={{ width: "15rem" }}>
+              <div className="masterMain4">
                 <img
                   className="card-img-top masterimg4"
                   src={img3}
@@ -93,7 +96,6 @@ export default function Masterwork() {
                   <b>
                   Stitched garment will be deilvered at your doorstep </b>
                   </p>
-                 
                 </div>
               </div>
             </div>
@@ -112,10 +114,9 @@ export default function Masterwork() {
         <div className="container my-5">
           <div className="row justify-content-evenly">
             <div className="col-md-2">
-              <div  className=" justify-content-center"  style={{ width: "15rem" }} >
+              <div  className=" justify-content-center cust1">
                 <img
-                  className=" justify-content-center"
-                  style={{ width: "81px", height: "81px" }}
+                  className=" justify-content-center custImg1"
                   src={Ellipse20}
                   alt="Card image cap"
                 />
@@ -131,11 +132,10 @@ export default function Masterwork() {
               </div>
             </div>
             <div className="col-md-2">
-              <div className="" style={{ width: "15rem" }}>
+              <div className="cust2">
                 <img
-                  className="card-img-top"
+                  className="card-img-top custImg2"
                   src={Ellipse20}
-                  style={{ width: "81px", height: "81px" }}
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -150,10 +150,9 @@ export default function Masterwork() {
               </div>
             </div>
             <div className="col-md-2">
-              <div className="" style={{ width: "15rem" }}>
+              <div className="cust3">
                 <img
-                  className="card-img-top"
-                  style={{ width: "81px", height: "81px" }}
+                  className="card-img-top custImg3"
                   src={Ellipse20}
                   alt="Card image cap"
                 />
@@ -205,7 +204,14 @@ export default function Masterwork() {
             <h3>Address</h3>
             <p className="footData">2nd floor, Ayodhya Bypass Rd, Bhawanidham <br/> Phase-1, Chhatrapati Nagar, Narela Shankri,<br/>  Ayodhya Nagar, Bhopal, Madhya Pradesh <br/> 462041 9599569654, 9599569654</p>
         </div>
-        <img src={footerPay} alt="Payment Img" className="footerPay"></img>
+        <div className="instaFace">
+          <img src={instagram} alt="" className="instImg"></img>
+          <img src={facebook} alt="" className="faceImg"></img>
+        </div>
+        <div className="footPlayApp">
+          <img src={playStore} alt="" className="footPlay" />
+          <img src={appStore} alt="" className="footApp" />
+        </div>
         <p className="footerAdd">Fashion consultants Find <br/>Fabric shops Blogs <br/> Privacy Policy</p>
       </div>
     </>
