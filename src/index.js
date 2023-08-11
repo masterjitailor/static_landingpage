@@ -3,25 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/Home";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Fashion from "./components/Fashion";
 import Working from "./components/Working";
 import Contact from "./components/Contact";
-import Landing from './components/Landing';
-import LandingHeader from './components/LandingHeader'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/Landing" element={<Landing />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/fashion" element={<Fashion />} />
-        <Route path="/working" element={<Working />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
-
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/fashion" element={<Fashion/>} />
+      <Route path="/working" element={<Working/>} />
+      <Route path="/contact" element={<Contact/>} />
+    </Routes>
+  </BrowserRouter>
+    
   </React.StrictMode>
 );
