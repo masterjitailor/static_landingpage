@@ -1,107 +1,135 @@
-.navContainer{
-width: 100%;
-height: 100vh;
-border-radius: 0px 0px 100vw 100vw;
-overflow-x: hidden;
-align-items: flex-start;
+.navContainer {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px 0px 100vw 100vw;
+    overflow-x: hidden;
+    align-items: flex-start;
 
 }
-.container{
-    justify-content: space-evenly;
-}
-.logoImg{
+
+.logoImg {
     width: 8vw;
     height: 12vh;
     margin-top: 2rem;
 }
 
-.headerText{
-font-family: Helvetica Neue LT Std;
-font-weight: bolder;
-position: absolute;
-top: 13rem;
-left:13rem;
-font-size: 3rem;
+.headerText {
+    font-family: Helvetica Neue LT Std;
+    font-weight: bolder;
+    position: absolute;
+    top: 13rem;
+    left: 13rem;
+    font-size: 3rem;
 }
-.headerMain{
+
+.headerMain {
     overflow: hidden;
 }
 
-.header1, .header2, .header3,.header4{
+.header1,
+.header2,
+.header3,
+.header4 {
     margin-left: 3rem;
     margin-top: 2rem;
     font-weight: 700;
-    font-size:larger;
+    font-size: larger;
 }
-.MainMaster{
+
+.MainMaster {
     margin: 3.5rem 0rem;
     text-align: center;
 }
-.text2Master{
+
+.text2Master {
     margin-top: 3.5rem;
 }
-.masterImg1{
+
+.masterImg1 {
     margin-top: 5rem;
 }
-.ellipseBox{
+
+.ellipseBox {
     display: flex;
     flex-direction: row;
     margin-left: 5rem;
 }
-.ellipseBox>h1{
+
+.ellipseBox>h1 {
     margin-top: 3rem;
     margin-left: -6rem;
 }
-.ellipseBox>img{
+
+.ellipseBox>img {
     width: 10vw;
     height: 20vh;
 }
-.text2{
+
+.text2 {
     color: #000;
-text-align: center;
-font-family: Helvetica Neue LT Std;
-font-size: 50px;
-font-style: normal;
-font-weight: 700;
-line-height: 136.687%;
+    text-align: center;
+    font-family: Helvetica Neue LT Std;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.687%;
 }
-.aboutMaster{
+
+.aboutMaster {
     display: flex;
     flex-direction: row;
 }
-.aboutMaster>img{
+
+.aboutMaster>img {
     height: 15vh;
     width: 7vw;
 }
-.aboutMaster>h1{
+
+.aboutMaster>h1 {
     margin-left: -2rem;
     margin-top: 2.6rem;
 }
-.paragraph{
-    width: 40rem;
+
+.paragraph {
+    width: 60rem;
     margin-left: 5rem;
     margin-top: 2rem;
     text-align: left;
 }
-.input1{
+.paragraph p{
+    width: auto;
+    font-size: x-large;
+}
+
+.paragraph2 {
+    background-color: white;
+    width: 34rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.input1 {
     border: 1px dashed black;
     padding: 1rem 2rem;
     margin: 2rem 0rem 0 8.5rem;
     border-radius: 0.5rem;
-    
-  }
-.input2{
+
+}
+
+.input2 {
     border: 1px dashed black;
     padding: 0.2rem 2rem;
     margin: 0rem 0rem 0 8.5rem;
     border-radius: 0.5rem;
 }
 
-.btnWidth{
+.btnWidth {
     width: 15rem;
     margin: 1rem 0rem 0 11rem;
 }
-.footer{
+
+.footer {
     border-top: 1px dashed black;
     display: flex;
     flex-direction: row;
@@ -109,190 +137,292 @@ line-height: 136.687%;
     margin: 2rem 6rem 8rem 6rem;
     padding-top: 2rem;
 }
-.footerLogo{
+
+.footerLogo {
     height: 10vh;
     margin-top: 2.4rem;
 }
-.footerPay{
+
+.footerPay {
     width: 20vw;
     height: 7vh;
     margin-top: 2.4rem;
 }
-.footerAdd{
+
+.footerAdd {
     margin-top: 2.4rem;
 }
-  /* Apply underline to the active link */
+
+.linkbtn {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0%;
+    border-radius: 3px;
+    border: none;
+}
+
+/* Apply underline to the active link */
 .navbar-nav .nav-item .nav-link.active {
     position: relative;
-  }
-   .nav-link.active::after {
+}
+
+.nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -5px; /* Adjust the distance from the link */
+    bottom: -5px;
+    /* Adjust the distance from the link */
     left: 0;
     width: 100%;
     height: 2px;
     background-color: #070706;
-  }
-  .masterimg1,.masterimg2,.masterimg3,.masterimg4{
-    width: 81px; height: 81px;
 }
-.masterText1{
-    font-weight:bold;width:10rem;text-align:left;margin-left:3rem;
+
+.masterimg1,
+.masterimg2,
+.masterimg3,
+.masterimg4 {
+    width: 81px;
+    height: 81px;
 }
-.masterText2{
-    font-weight:500;width:10rem;text-align:left;margin-left:3rem; margin-top:-1rem
+
+.masterText1 {
+    font-weight: bold;
+    width: 10rem;
+    text-align: left;
+    margin-left: 3rem;
 }
-.masterText3{
-    font-weight:450;width:10rem;text-align:left;margin-left:3rem
+
+.masterText2 {
+    font-weight: 500;
+    width: 10rem;
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -1rem
 }
-.masterText4{
-    font-weight:450;width:10rem;text-align:left;margin-left:3rem;margin-top:-1rem;
+
+.masterText3 {
+    font-weight: 450;
+    width: 10rem;
+    text-align: left;
+    margin-left: 3rem
 }
-.masterMain1,.masterMain2,.masterMain3,.masterMain4{
-    width:15rem;
+
+.masterText4 {
+    font-weight: 450;
+    width: 10rem;
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -1rem;
 }
-.custImg1,.custImg2,.custImg3{
-     width: 81px; height: 81px;
+
+.masterMain1,
+.masterMain2,
+.masterMain3,
+.masterMain4 {
+    width: 15rem;
 }
-.cust1,.cust2,.cust3{
-     width: 15rem;
+
+.custImg1,
+.custImg2,
+.custImg3 {
+    width: 81px;
+    height: 81px;
 }
-.store{
+
+.cust1,
+.cust2,
+.cust3 {
+    width: 15rem;
+}
+
+.store {
     display: flex;
     flex-direction: row;
 }
-.imgPay{
+
+.imgPay {
     position: absolute;
     top: 22rem;
     left: 12rem;
     width: 10vw;
     height: 10vh;
 }
-.imgPay1{
+
+.imgPay1 {
     position: absolute;
     top: 22.6rem;
     left: 22rem;
     width: 10vw;
     height: 7vh;
 }
-.imgPay:hover,.imgPay1:hover{
+.imgPay2{
+    position: absolute;
+    top: 21.8rem;
+    left: 12rem;
+    width: 10vw;
+    height: 10vh;
+}
+
+.imgPay:hover,
+.imgPay1:hover,
+.imgPay2:hover {
     cursor: pointer;
 }
-.instaFace{
+
+.instaFace {
     display: none;
     height: 0;
     width: 0;
 }
-.footPlayApp{
+
+.footPlayApp {
     margin-top: 2rem;
 }
-.footApp,.footPlay{
+
+.footApp,
+.footPlay {
     width: 8rem;
 }
 
 
-  /* Applying media quaries for responsiveness */
-  @media screen and (max-width: 500px) {
-    *{
+/* Applying media quaries for responsiveness */
+@media screen and (max-width: 500px) {
+    * {
         padding: 0;
         margin: 0;
     }
-    .nav-link.active::after{
-        width:20%;
+
+    .nav-link.active::after {
+        width: 20%;
         margin-right: 2rem;
     }
-    .logoImg{
+
+    .logoImg {
         width: 6rem;
     }
-    .header1,.header2,.header3,.header4{
+
+    .header1,
+    .header2,
+    .header3,
+    .header4 {
         margin-left: 0.5rem;
     }
-    .headerText{
+
+    .headerText {
         font-size: 2.5rem;
         margin-right: 1rem;
     }
-    .store{
+
+    .store {
         display: flex;
         flex-direction: column;
     }
+
     .imgPay {
         width: 50vw;
         margin-left: -6.5rem;
         margin-top: 10rem;
     }
-    .imgPay1 {
+
+    .imgPay1, .imgPay2 {
         width: 45vw;
         margin-left: -16rem;
         margin-top: 15rem;
     }
-    .ellipseBox>h1>span{
+
+    .ellipseBox>h1>span {
         display: none;
         height: 0;
         width: 0;
     }
+
     .ellipseBox>h1 {
         margin-top: -5rem;
         font-weight: 700;
         margin-left: -3rem;
         font-size: 2.1rem;
     }
+
     .ellipseBox>img {
         height: 4rem;
         width: 4rem;
         margin-top: -6rem;
         margin-left: -3rem;
     }
-    .masterMain1, .masterMain2, .masterMain3, .masterMain4 {
+
+    .masterMain1,
+    .masterMain2,
+    .masterMain3,
+    .masterMain4 {
         width: 15rem;
         margin: 0rem 1rem 2rem 2.5rem;
     }
-    .masterimg1,.masterimg2,.masterimg3,.masterimg4{
+
+    .masterimg1,
+    .masterimg2,
+    .masterimg3,
+    .masterimg4 {
         width: 35vw;
         height: 21vh;
         margin-bottom: 0.7rem;
     }
-    .masterText1,.masterText2, .masterText3, .masterText4 {
+
+    .masterText1,
+    .masterText2,
+    .masterText3,
+    .masterText4 {
         font-size: 2;
         margin: 0;
         padding: 0;
         width: 15rem;
     }
-    .cust1,.cust2,.cust3{
+
+    .cust1,
+    .cust2,
+    .cust3 {
         width: 15rem;
         margin-left: 1rem;
-   }
-    .card-body{
-        width:100%;
+    }
+
+    .card-body {
+        width: 100%;
         margin: 0 1rem 0 1rem;
     }
+
     .aboutMaster>img {
         height: 5rem;
         width: 4rem;
         margin-top: 1rem;
     }
-    .input1{
+
+    .input1 {
         width: 18rem;
         margin: 1rem 1rem 1rem 3rem;
         border: dotted;
     }
-    .input2{
+
+    .input2 {
         width: 18rem;
         margin: 2rem 1rem 2rem 3rem;
         border: dotted;
     }
+
     .btnWidth {
         width: 18rem;
         margin: 0rem 1rem 1rem 3rem;
     }
-    .paragraph{
+
+    .paragraph, .sec, .paragraph2 {
+
         margin-left: 0;
         padding: 0 1rem 0 1rem;
     }
-    .paragraph>p{
+
+    .paragraph>p {
         text-align: justify;
     }
-    .footer{
+
+    .footer {
         border-top: 2.5px dashed black;
         display: flex;
         flex-direction: column;
@@ -300,42 +430,51 @@ line-height: 136.687%;
         margin: 1rem 1.5rem 8rem 1.5rem;
         padding-top: 2rem;
     }
-    .footerLogo{
+
+    .footerLogo {
         height: 0vh;
     }
-    .address{
+
+    .address {
         margin-top: -3rem;
     }
-    .instaFace{
+
+    .instaFace {
         display: flex;
         flex-direction: row;
     }
-    .instImg,.faceImg{
+
+    .instImg,
+    .faceImg {
         width: 5vh;
         height: 5vh;
         margin: 0rem 1.5rem 1.5rem 0rem
     }
+
     .footPlayApp {
         display: flex;
         flex-direction: row;
         margin-top: 4rem;
-        margin-left: -0.5rem;
+        margin-left: 1rem;
     }
-    .footApp{
+
+    .footApp {
         height: 2.7rem;
-        margin-top:0.7rem;
+        margin-top: 0.7rem;
     }
-    .footPlay{
+
+    .footPlay {
         height: 4rem;
     }
-    .footApp:hover,.footPlay:hover{
+
+    .footApp:hover,
+    .footPlay:hover {
         cursor: pointer;
     }
-    .footerAdd{
+
+    .footerAdd {
         font-weight: 600;
         font-size: large;
         margin-top: 1rem
-    } 
+    }
 }
-
-  
