@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../style/header.css";
@@ -6,31 +5,31 @@ import img from "../img/logo-masterji 1.png";
 import imgPay from "../img/Group 221.png";
 import playStore from "../img/playStore.png";
 import appStore from "../img/appStore.png";
+import { HashLink as Link } from "react-router-hash-link";
+
 
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-warning  navContainer" style={{ background: '#FED549' }}>
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            <img src={img} className="logoImg" alt="" />
-          </NavLink>
+          <img src={img} className="logoImg" alt="" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto"> {/* ml-auto will push the nav links to the right */}
               <li className="nav-item">
-                <NavLink className="nav-link header1" activeClassName="active" to="/">find fabric shop</NavLink>
+                <Link className="nav-link header1" to='#mainmaster' smooth>How it works?</Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link header2" activeClassName="active" to="/fashion">fashion consultant</NavLink>
+                <Link className="nav-link header2" activeClassName="active" to='#aboutMaster'>About Us</Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link header3" activeClassName="active" to="/working">How it works?</NavLink>
+                <Link className="nav-link header3" activeClassName="active" to='#container'>FAQ</Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link header4" activeClassName="active" to="/contact">Contact Us</NavLink>
+                <Link className="nav-link header4" activeClassName="active" to='#contactUs'>Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -38,10 +37,10 @@ const Header = () => {
       </nav>
 
       <div className='headerMain text-center py-5'> {/* text-center to center-align content */}
-        <h1 className='headerText'>32 fabric shops <br />near you</h1>
+        <h1 className='headerText'> Book a tailor at your <br />door step</h1>
       </div>
       <div className="text-center store">
-        <img src={playStore} className='imgPay img-fluid' alt='' />
+        <img src={playStore} className='imgPay2 img-fluid' alt='' />
         <img src={appStore} className='imgPay1 img-fluid' alt='' />
       </div>
     </>
